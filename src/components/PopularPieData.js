@@ -1,17 +1,12 @@
 import react from 'react';
 import PieChart from '../utils/PieChart';
-import useYearlyData from '../hooks/useYearlyData';
+import useGetPopularity from '../hooks/useGetPopularity';
 
 const PopularPieData = () => {
-    const meatId = 1;
-    const outletId = 1;
-    const year = 2022;
-
-    const yearData = useYearlyData(meatId, outletId, year, "Quantity Sold (Kg)", "quantity");
-    
+    const popuData = useGetPopularity();
     return (
         <div className='barChartCont'>
-            <PieChart chartData={yearData} />
+            <PieChart chartData={popuData} />
         </div>
     );
 

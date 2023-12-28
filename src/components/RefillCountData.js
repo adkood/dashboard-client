@@ -2,18 +2,20 @@ import React, { useState, useEffect } from 'react';
 import BarChart from '../utils/BarChart';
 import 'chart.js/auto';
 import '../utils/Main.css';
-import useYearlyData from '../hooks/useYearlyData';
+import useRefillData from '../hooks/useRefillData';
+import { useSelector } from 'react-redux';
 
 const RefillCountData = () => {
-    const meatId = 1;
-    const outletId = 1;
-    const year = 2022;
+    const meatId = useSelector((state) => state.outlet.refillMeatState);
+    const outletId = useSelector((state) => state.outlet.outletState);
+    const year = useSelector((state) => state.outlet.refillYearState);
 
-    const yearData = useYearlyData(meatId, outletId, year, "Quantity Sold (Kg)", "quantity");
-    
+
+    const refillData = useRefillData(meatId, outletId, year);
+    console.log(refillData);
     return (
         <div className='barChartCont'>
-            <BarChart chartData={yearData} />
+            <BarChart chartData={refillData} />
         </div>
     );
 };

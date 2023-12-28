@@ -1,122 +1,3 @@
-/* .App {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.outlet {
-    width: 80%;
-    height: 95%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px;
-    border: 1px solid;
-    display: flex;
-    padding: 10px;
-}
-
-.outlet__barData {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.outlet__barData__inside {
-    width: 90%;
-    height: 50%;
-}
-
-.outlet_PieData {
-    width: 90%;
-    height: 50%;
-    display: flex;
-}
-
-.outlet__PieData__inside {
-    width: 56%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.outlet__PieData__inside__bottom {
-    width: 50%;
-    height: 20%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.outlet__Data__inside {
-    width: 70%;
-    height: 50%;
-}
-
-.outlet__barData__inside_selectBar {
-    width: 100%;
-    height: 10%;
-    border: 1px solid lightskyblue;
-    display: flex;
-}
-
-.outlet__barData__inside_selectBar__leftSide {
-    width: 70%;
-    height: 100%;
-}
-
-.outlet__barData__inside_selectBar__rightSide {
-    width: 30%;
-    height: 100%;
-}
-
-.barChartCont {
-    width: 100%;
-}
-
-.sideBar {
-    width: 4%;
-    height: 96%;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid lightskyblue;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.btn {
-    width: 80%;
-    height: 14%;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    color: aliceblue;
-    background-color: lightskyblue;
-    border: 1px solid;
-}
-
-.btn__outlet {
-    width: 90%;
-    height: 22%;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    color: lightskyblue;
-    background-color: aliceblue;
-    border: 1px solid lightskyblue;
-    overflow: hidden;
-} */
-
 .App {
     width: 100vw;
     height: 100vh;
@@ -128,12 +9,13 @@
 
 .outlet {
     width: 80%;
-    height: 95%;
+    height: 93%;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px;
-    border: 1px solid;
+    box-shadow: 1px 1px 5px lightblue;
+    border: 1px solid lightblue;
     display: flex;
     padding: 1%;
+    background-color: whitesmoke;
 }
 
 .outlet__barData {
@@ -157,12 +39,24 @@
 }
 
 .outlet__PieData__inside {
-    width: 56%;
-    height: 100%;
+    width: 48%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.outlet__PieData__inside__heading {
+    color: lightskyblue;
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outlet__PieData__inside__heading > * {
+    margin: 3px;
 }
 
 .outlet__PieData__inside__bottom {
@@ -206,7 +100,7 @@
     height: 96%;
     margin: 1%;
     border-radius: 10px;
-    border: 2px solid lightskyblue;
+    border: 1px solid lightskyblue;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -228,17 +122,26 @@
     align-items: center;
 }
 
-.btn__insideOutlet > * {
+.btn__insideOutlet>* {
     margin: 10px;
 }
 
 .btn__outlet {
     width: 90%;
-    height: 22%;
+    height: 15%;
     border-radius: 5px;
     font-size: 1.5rem;
-    color: lightskyblue;
     background-color: aliceblue;
     border: 1px solid lightskyblue;
+    overflow: hidden;
+}
+
+.btn__outlet__Selected {
+    width: 90%;
+    height: 15%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    border: 2px orange;
     overflow: hidden;
 }
