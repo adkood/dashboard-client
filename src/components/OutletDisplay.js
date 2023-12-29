@@ -58,8 +58,7 @@ const OutletDisplay = () => {
                             <PopularPieData />
                         </section>
                         <section className="outlet__PieData__inside">
-                            <button className="btn__insideOutlet">Analize{<VscGraph size={"3rem"} />}</button>
-                            <button className="btn__insideOutlet">+ Inventory{<MdInventory2 size={"3rem"} />}</button>
+                            <button className="btn__insideOutlet">Analize your data{<VscGraph size={"5rem"} />}</button>
                         </section>
                     </section>
                     <section className="outlet__barData__inside">
